@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Blog</title>
+
+    <style>
+      .blog-link {
+        font-size: 1.7rem;
+        line-height: 3rem;
+      }
+      a {
+        text-decoration: none;
+        color: #0645ad;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #0645ad;
+      }
+      .padded {
+        margin: auto;
+        padding: 0 75px;
+        max-width: 900px;
+      }
+      ul {
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      font-size: 1rem;
+      font-weight: 300;
+      padding: 1rem 0.33rem;
+      line-height: 1.55;
+      max-width: 50em;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-flow: row wrap;
+      background: #fcfcfc;
+    "
+  >
+    <div class="color">
+      <div class="padded">
+        [<a href="/">home</a>]
+        <ul>
+          <li>
+            <a href="/blog/ecom.html" class="blog-link">E-commerce and AI</a>
+          </li>
+          <li>
+            <a href="/blog/ai.html" class="blog-link">Basic Elements of AI</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      let y = localStorage.getItem("name");
+
+      if (y == 1) {
+        // document.body.style.color = "grey";
+        document.body.style.background = "#ffffff";
+        document.body.style.color = "";
+      } else {
+        // document.body.style.color = "grey";
+        document.body.style.background = "#222";
+        document.body.style.color = "#e6e6e6";
+      }
+    </script>
+  </body>
+</html>

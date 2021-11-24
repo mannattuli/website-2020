@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mannat Tuli | Search</title>
+  </head>
+  <body>
+    <!--<p style="margin: 0px">
+      <span class="clear">clear</span>
+    </p>-->
+    <a class="open-modal">Filter</a>
+    <input type="text" class="input" placeholder="search for..."  onkeyup="hideFunc(), search(id)" id="search"/>
+    <!--<button id="button" onclick="hideFunc()">Enter</button>-->
+    
+    <p style="float: right;">
+      <input type="checkbox" id="switch"
+      class="checkbox" />
+      <label for="switch" class="toggle change" style="cursor: pointer;"></label>
+    </p>
+    <p style="float: right;margin-top: 15px;margin-right: 5px;font-weight: 300;" class="text-mode">Light</p>
+
+    <!--Filter-->
+    <div class="overlay hidden"></div>
+    <div class="filter hidden">      
+      <button class="close-modal">×</button>
+      <p style="font-size: 1.5em;font-weight: 800;">Filter</p>
+      <p id="filter-Projects" style="cursor: pointer;margin-top: 10px;">Projects</p>
+      <p id="filter-blog" style="cursor: pointer;margin-top: 10px;">Blogs</p>
+      <p id="clear-filter" style="cursor: pointer;margin-top: 10px;">Clear</p>
+    </div>
+
+    <!--Projects-->
+    <section class="project">
+    <h1>Projects</h1>
+    <div class="box text">
+      <h3>themessages</h3>
+      <span class="project-files"
+        >[<a href="https://themessages.herokuapp.com/">website</a>]</span
+      >
+      <p class="para">
+        TheMessages is an online directory that connects people through a chatboard. It's kind of like my own social media!
+      </p>
+    </div>
+    <div class="box text">
+      <h3>C.A.R.E</h3>
+      <span class="project-files"
+        >[<a href="http://healthybot.azurewebsites.net/">website</a>]</span
+      >
+      <span class="project-files"
+        >[<a
+          href="https://docs.google.com/presentation/d/1qj7WdGZTlzz6c_EBlQJUDJU5uRN11iWRCnZp_nz4OtI/edit?usp=sharing"
+          >slides</a
+        >]</span
+      >
+      <span class="project-files"
+        >[<a href="https://github.com/mannattuli/C.A.R.E">code</a>]</span
+      >
+      <p class="para">
+        This webapp made on Azure portals is an app developed for patients by my
+        team. We added a chatbot which responds to queries and even asks
+        questions about symptoms user may be having. All the information that is
+        inputted is shown in the form of graphs and the chatbot gives do's and
+        don'ts after analsying the data.
+      </p>
+    </div>
+    <div class="box text">
+      <h3>StoryBomb</h3>
+      <span class="project-files">[<a href="https://storybomb.netlify.app/">website</a>]</span>
+      <span class="project-files">[<a href="https://github.com/mannattuli/StoryBomb">code</a>]</span>
+      <p class="para">
+        You will be offered a choice after every couple of paragraphs, you have to
+        choose one and make your story! There are a lot of possible outcomes each
+        not related to other so you can play this game a lot of times! Very easy ,
+        fun and interesting game to play, consisting of different genres like, sci
+        fi, drama, and adventure.
+      </p>
+    </div>
+    <div class="box text">
+      <h3>AXIS</h3>
+      <span class="project-files">[<a href="https://docs.google.com/presentation/d/1V-AxQtYNoXitt_mNorr8jsyZGthuELDAEwuooSgzMlM/edit#slide=id.p">slides</a>]</span>
+      <span class="project-files">[<a href="https://github.com/mannattuli/AXIS">code</a>]</span>
+      <p class="para">
+        An Ai chatbot for the students to easily make the decision of choosing a
+        stream or finding a career they might want to pursue!Students nowadays do
+        not have sufficient time to even think about their career options, this is
+        why a user-friendly chatbot which saves time to determine their career
+        choices can be helpful.
+      </p>
+    </div>
+    <div class="box text">
+      <h3>Chess-Puzzles</h3>
+      <span class="project-files">[<a href="https://chess-puzzles.netlify.app/">website</a>]</span>
+      <span class="project-files">[<a href="https://github.com/mannattuli/chess-puzzle">code</a>]</span>
+      <p class="para">
+        Game made on HTML and JavaScript for practicing chess with the help of
+        puzzles. You are given a position of chess and have to find the best move.
+        Added a solution button which slowly shows all the best moves in sequence.
+      </p>
+    </div>
+  </section>
+
+    <!--Blog-->
+    <section class="blogs">
+    <h1 style='margin-right:132px'>Blog</h1>
+    <div class="box text">
+      <h3>E-commerce and AI</h3>
+      <span class="project-files"
+        >[<a href="https://mannattuli.github.io/blog/ecom.html">blog post</a
+        >]</span
+      >
+      <p class="para">
+        E-commerce industry has an incredible & impressive growth over the
+        years. After COVID era the importance of online shopping has increased
+        manifolds. AI has a major role in transforming the way one does shopping
+        from simple T-shirt to Big electronic appliances. In this blog I want to
+        highlight Key benefits of AI to the organizations & customers.
+      </p>
+    </div>
+    <div class="box text">
+      <h3>Basic Elements of AI</h3>
+      <span class="project-files"
+        >[<a href="https://mannattuli.github.io/blog/ai.html">blog post</a
+        >]</span
+      >
+      <p class="para">
+        Artificial Intelligence is basically a software that is made to imitate
+        human behavior. Key elements of AI are Machine learning, computer
+        vision, Natural learning processing, Conversational AI and Anamoly
+        detection.
+      </p>
+      </p>
+    </div>
+  </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
